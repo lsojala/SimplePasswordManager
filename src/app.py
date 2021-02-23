@@ -18,9 +18,6 @@ class Manager(tk.Tk):
         self.geometry("620x520")
 
         self.unsaved = False
-        ###
-        # self.data = db.KeyDatabase()
-        ###
 
         self.search_param = tk.StringVar(self,value="")
         self.search_param.trace_add(mode="write",callback=self.search_param_callback) 
